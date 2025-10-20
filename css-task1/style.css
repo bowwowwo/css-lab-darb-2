@@ -1,0 +1,159 @@
+/* Toms Gerbaševskis, tg25032 */
+
+header {
+    background-color: #334443; /* blue-ish green */
+    color: white;
+    padding: 20px 40px;
+    text-align: center;
+}
+
+header h1, #site-title {
+    font-size: 3em;
+    margin-bottom: 15px;
+    font-family: "BBH Sans Hegarty", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header a, .nav-link {
+    text-decoration: none;
+    font-weight: 500;
+    text-transform: uppercase;  
+    color: white;
+    background-color: #34656D; /* cyan */
+    font-family: "Nunito", sans-serif;
+
+    display: inline-block;
+    width: 100px;
+    padding: 10px 15px;
+    margin: 0 10px;
+    border-radius: 5px;
+
+}
+
+.nav-link:hover {
+    color: #FAEAB1;
+}
+
+body {
+    margin: 0;
+    background-image: url(bg_1.jpg);
+    background-color: #f6f6f8;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    font-family: "Nunito", sans-serif;
+
+}
+
+body img, #intro-section {
+    padding-top: 1em;
+    display: block;
+    margin: 0 auto;
+
+    border-radius: 5px;
+    width: 900px;
+    height: 600px;
+}
+
+#intro-text {
+    margin: 1rem auto;
+    padding: 15px;
+    background-color: #FAEAB1; /* yellow-ish*/
+    border-radius: 5px;
+}
+
+/* after image ----------------------------------------------------*/
+
+.section {
+padding: 3rem;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.menu-list {
+    width: 300px;
+    margin: 0 auto;
+    padding: 0;
+    list-style-position: inside;
+    list-style-type: none;
+}
+
+ul li::before {
+  content: '🔹 ';
+}
+
+#menu-section {
+    padding-bottom: 1rem;
+}
+
+#specials-section {
+    padding: 1rem;
+}
+
+.specials-table, td {
+    margin: 0 auto; /* centers table horizontally */
+    background-color: whitesmoke;
+    border:1px solid;
+    border-collapse: collapse;
+    padding:5px;
+}
+
+th {
+    background-color: #34656D;
+    color: white;
+
+    border:1px solid;
+    border-color: black;
+    border-collapse: collapse;
+    padding:5px;
+}
+
+.section-title{
+    font-weight: 700;
+    font-size:2rem;
+}
+
+/*after list and table----------------------------------------------------*/
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* centers all form elements horizontally */
+    gap: 15px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.form-input, .form-textarea {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #334443;
+}
+
+.form-button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #34656D;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-button:hover {
+    background-color: #FAEAB1;
+    color: black;
+}
+
+/*footer----------------------------------------------------*/
+
+#main-footer {
+    text-align: center;
+    padding: 15px 0;
+    background-color: #334443;
+    color: white;
+}
