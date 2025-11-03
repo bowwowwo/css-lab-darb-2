@@ -1,0 +1,165 @@
+/* Toms Gerbaševskis tg25032 */
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #FBF3D5;
+}
+
+header{
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 1000; 
+}
+
+#main-header{
+    justify-content: space-between;
+    padding: 1px;
+    text-align: center;
+    background: #D6A99D;
+}
+
+#main-header, h1{
+    padding: 0px 20px 0px 20px;
+}
+
+#main-header ul li{
+    list-style: none;
+    background-color: #D6DAC8;
+    padding: 15px;
+    margin-top: 0px;
+    margin-left: 10px;
+    float: right;
+}
+
+#main-header a{
+    text-decoration: none;
+    color: black;
+}
+
+#main-header li:hover{
+    background-color: #9CAFAA;
+}
+
+/* _____________________________________-------------------------------------------_______________________------------------------- */
+
+.image-container {
+    display: flex;
+    position: relative;
+    padding: 10px;
+}
+
+.image-container:hover .overlay-text{
+    opacity: 0.5;
+}
+
+.overlay-text {
+    position: absolute;
+    inset-inline-start: 230px;
+    inset-block-start: 150px;
+
+    background-color: #D6A99D;
+    padding: 5px;
+}
+
+/*______________________________________----------------------------_________________-----------------______________________________*/
+
+.image-gallery{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.image-item:hover{
+    filter: brightness(50%);
+    transform: translateY(-10px);
+}
+
+/* _____________-------------_____________________________--------_-----------_--------------------------------------------__________*/
+
+.sidebar {
+    margin-left: 50px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px black;
+    min-width: 250px;
+    max-width: 300px;
+}
+
+.sidebar h3 {
+    margin-top: 0;
+    font-size: 20px;
+    border-bottom: 2px solid gray;
+    padding-bottom: 8px;
+}
+
+.sidebar h4 {
+    margin-top: 20px;
+    font-size: 15px;
+    border-bottom: 1px solid gray;
+    padding-bottom: 4px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: navy;
+}
+
+.sidebar a:hover {
+  background-color: yellow;
+}
+
+
+
+/* _____________-------------_____________________________--------_-----------_--------------------------------------------__________*/
+
+
+footer {
+    background-color: #9CAFAA;
+    color: #fff;
+    padding: 20px 40px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-left p, .footer-right p {
+    margin: 0;
+}
+
+.footer-right ul {
+    list-style: none;
+    padding: 0;
+    margin: 5px 0 0;
+    display: flex;
+    gap: 15px;
+}
+
+.footer-right a {
+    padding: 5px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-right a:hover {
+    background-color: yellow;
+    color:black;
+}
