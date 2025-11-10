@@ -18,6 +18,14 @@ header{
 
 body{
     font-family: "Zalando Sans Expanded";
+    
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin-right: 330px;
+    padding: 20px;
 }
 
 #main-header{
@@ -100,16 +108,17 @@ body{
 /* _____________-------------_____________________________--------_-----------_--------------------------------------------__________*/
 
 .sidebar {
-    margin-left: 50px;
-    margin-top: 50px;
-    display: flex;
-    flex-direction: column;
+    position: fixed;
+    top: 100px;
+    right: 20px;
+    width: 280px;
     background-color: #D6A99D;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 6px black;
-    min-width: 250px;
-    max-width: 300px;
+    overflow-y: auto;
+    max-height: calc(100vh - 140px);
+    z-index: 999;
 }
 
 .sidebar h3 {
@@ -154,8 +163,8 @@ footer {
     color: #fff;
     padding: 20px 40px;
 
-    display: flex;
     justify-content: space-between;
+    display: flex;
     align-items: center;
 }
 
