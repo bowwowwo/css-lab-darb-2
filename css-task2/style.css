@@ -153,16 +153,16 @@ footer {
     background-color: #9CAFAA;
     color: #fff;
     padding: 20px 40px;
-}
 
-.footer-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+
 .footer-left p, .footer-right p {
     margin: 0;
+    padding-bottom: 10px;
 }
 
 .footer-right ul {
