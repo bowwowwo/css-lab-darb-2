@@ -12,7 +12,7 @@ function actionDesc() { // const log();
     }
 }
 
-function translateWord(word, from, to) { // contains word, the array from which it finds and which 
+function translate(word, from, to) { // contains word, the array from which it finds and which 
     const wordLwr = word.toLowerCase();
     const index = from.findIndex(enWord => enWord === wordLwr);
 
@@ -37,16 +37,17 @@ function translateText(text, which) {
     const textArray = text.split(" ");
     const translatedText = [];
 
-    if (which === 1) {
-        textArray.forEach(element => {
-        translatedText.push(translateWord(element, english, spanish));
+    const regexp = /[.,!?]/g;
+
+    textArray.forEach(element => {
+        const Word = element.replace(regexp, "");
+
+        const marks = element.match(regexp)?.join("") || "";
+
+        const translated = (which === 1) ? translate(Word, english, spanish) : translate(Word, spanish, english);
+
+        translatedText.push(translated + marks);
     });
-    }
-    else {
-        textArray.forEach(element => {
-        translatedText.push(translateWord(element, spanish, english));
-    });
-    }
 
     return translatedText.join(" ");
 
