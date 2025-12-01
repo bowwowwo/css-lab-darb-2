@@ -1,7 +1,7 @@
 const english = ["cat", "dog", "one", "pixel", "array", "word", "is", "my"];
 const spanish = ["gato", "perro", "uno", "píxel", "la colección", "palabra", "es", "mi"];
 
-function actionDesc() {
+function actionDesc() { // const log();
     let actions = [];
 
     return function(description) {
