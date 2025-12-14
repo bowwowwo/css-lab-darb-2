@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Book Collection</title>
+  <script src="script.js"></script>
+  <style>
+    .error { color: red; }
+  </style>
+</head>
+<body>
+
+  <h1>Book Collection</h1>
+
+  <h2>Add a book</h2>
+
+  <form id="book-form">
+    <div>
+      <label for="cover">Cover image URL:</label><br>
+      <input type="text" id="cover">
+      <div id="cover-error" class="error"></div>
+    </div>
+
+    <div>
+      <label for="title">Title:</label><br>
+      <input type="text" id="title">
+      <div id="title-error" class="error"></div>
+    </div>
+
+    <div>
+      <label for="author">Author:</label><br>
+      <input type="text" id="author">
+      <div id="author-error" class="error"></div>
+    </div>
+
+    <div>
+      <label for="genre">Genre:</label><br>
+      <select id="genre">
+        <option value="">Select...</option>
+        <option value="Fantasy">Fantasy</option>
+        <option value="Scifi">Scifi</option>
+        <option value="Romance">Romance</option>
+        <option value="Mystery">Mystery</option>
+        <option value="Non-fiction">Non-fiction</option>
+      </select>
+      <div id="genre-error" class="error"></div>
+    </div>
+
+    <div>
+      <label for="year">Publication year:</label><br>
+      <input type="number" id="year">
+      <div id="year-error" class="error"></div>
+    </div>
+
+    <button type="submit">Add book</button>
+  </form>
+
+  <h2>Filter by genre</h2>
+  <div id="filters">
+	<input type="radio" name="genre-filter" id="filter-all" value="All" checked>
+	<label for="filter-all">All</label>
+
+	<input type="radio" name="genre-filter" id="filter-fantasy" value="Fantasy">
+	<label for="filter-fantasy">Fantasy</label>
+
+	<input type="radio" name="genre-filter" id="filter-scifi" value="Scifi">
+	<label for="filter-scifi">Scifi</label>
+
+	<input type="radio" name="genre-filter" id="filter-romance" value="Romance">
+	<label for="filter-romance">Romance</label>
+
+	<input type="radio" name="genre-filter" id="filter-mystery" value="Mystery">
+	<label for="filter-mystery">Mystery</label>
+
+	<input type="radio" name="genre-filter" id="filter-nonfiction" value="Non-fiction">
+	<label for="filter-nonfiction">Non-fiction</label>
+  </div>
+
+  <h2>Sort books</h2>
+  <select id="sort">
+    <option value="">-- Select sorting --</option>
+    <option value="title-asc">Title (A–Z)</option>
+    <option value="title-desc">Title (Z–A)</option>
+    <option value="year-asc">Year (Ascending)</option>
+    <option value="year-desc">Year (Descending)</option>
+    <option value="date-asc">Date added (Ascending)</option>
+    <option value="date-desc">Date added (Descending)</option>
+  </select>
+
+  <h2>Book Collection</h2>
+  <div id="book-list"></div>
+
+</body>
+</html>
