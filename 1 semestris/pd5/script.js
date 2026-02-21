@@ -137,12 +137,12 @@ document.addEventListener("DOMContentLoaded", (event) => {
 	function get_books() {
 		let result = [...books];
 
-		if (currentGenreFilter !== "All") {
-			result = result.filter(book => book.genre === currentGenreFilter);
+		if (current !== "All") {
+			result = result.filter(book => book.genre === current);
 		}
-		const sortValue = sortSelect.value;
+		const val = sortSelect.value;
 
-		switch (sortValue) {
+		switch (val) {
 			case "title-asc":
 				result.sort((a, b) => a.title.localeCompare(b.title));
 				break;
