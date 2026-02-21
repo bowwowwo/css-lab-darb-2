@@ -9,18 +9,12 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
 }
 
-if($start < 0){
-    echo "Not a natural nr";
-    die();
-}
-if($end < 0){
-    echo "Not a natural nr";
-    die();
+if ($start < 0 || $end < 0) {
+    die("Not a natural nr.");
 }
 
 if($end < $start){
-    echo "The end of the interval can't be smaller than the start of the interval.";
-    die();
+    die("The end of the interval can't be smaller than the start of the interval.");
 }
 
 interval_sundays($start, $end);
